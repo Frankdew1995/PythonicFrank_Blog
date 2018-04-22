@@ -6,6 +6,7 @@
     <description>Recent content on Pythonic Frank</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sat, 17 Mar 2018 14:26:27 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,6 +18,15 @@
       
       <guid>/contact/</guid>
       <description> Your Name Email Address An email address is required.  Message   </description>
+    </item>
+    
+    <item>
+      <title>First_post</title>
+      <link>/posts/first_post/</link>
+      <pubDate>Sat, 17 Mar 2018 14:26:27 +0100</pubDate>
+      
+      <guid>/posts/first_post/</guid>
+      <description>jncsdnvbns vns ns nsk</description>
     </item>
     
     <item>

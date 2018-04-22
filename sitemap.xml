@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>/posts/first_post/</loc>
+    <lastmod>2018-03-17T14:26:27+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/aboutme/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -21,7 +28,15 @@
   </url>
   
   <url>
+    <loc>/posts/</loc>
+    <lastmod>2018-03-17T14:26:27+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
+    <lastmod>2018-03-17T14:26:27+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
