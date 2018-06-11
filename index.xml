@@ -21,21 +21,21 @@
     </item>
     
     <item>
-      <title>Second_posts</title>
+      <title>Natural Language Processing and sentiment analysis with TextBlob: a Python NLP library</title>
       <link>/posts/second_posts/</link>
       <pubDate>Sun, 22 Apr 2018 11:11:42 +0200</pubDate>
       
       <guid>/posts/second_posts/</guid>
-      <description>n js csj</description>
+      <description></description>
     </item>
     
     <item>
-      <title>First_post</title>
+      <title>How to host a static website with Heroku</title>
       <link>/posts/first_post/</link>
       <pubDate>Sat, 17 Mar 2018 14:26:27 +0100</pubDate>
       
       <guid>/posts/first_post/</guid>
-      <description>jncsdnvbns vns ns nsk</description>
+      <description>#Step 1</description>
     </item>
     
     <item>
@@ -45,6 +45,15 @@
       
       <guid>/aboutme/</guid>
       <description>From the past two years, Frank Du has been working as a procurement professional and gained a deep understanding of FMCG procurement market in Europe. However, he&amp;rsquo;s currently conquering his underdogs and embracing web and data technologies.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/tags/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/</guid>
+      <description> Hello, world!   Hello, world! Discover this site by these tags. Primary Secondary Success Danger Warning Info Light Dark       </description>
     </item>
     
   </channel>
