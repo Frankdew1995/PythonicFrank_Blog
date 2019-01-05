@@ -9,6 +9,13 @@
   </url>
   
   <url>
+    <loc>/post/host_a_static_website_in_heroku/</loc>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/post/mailgun/</loc>
     <lastmod>2019-01-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -49,14 +56,14 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-01-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-01-05T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
