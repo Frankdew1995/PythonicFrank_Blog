@@ -44,14 +44,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>How to host a static website with Heroku</title>
-      <link>/post/first_post/</link>
-      <pubDate>Sat, 17 Mar 2018 14:26:27 +0100</pubDate>
-      
-      <guid>/post/first_post/</guid>
-      <description>#Step 1</description>
-    </item>
-    
   </channel>
 </rss>
