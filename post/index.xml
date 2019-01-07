@@ -17,7 +17,7 @@
       <pubDate>Sat, 05 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/post/host_a_static_website_in_heroku/</guid>
-      <description>Host a static website in Heroku for FREE using Python Flask framework Guideline  Follow Heroku Documention
+      <description>Host a static website in Heroku for FREE using Python Flask framework Guideline: Part 1: Push your website live to Heroku  Follow Heroku Documention
  Download Git Download Heroku CLI (Command Line Interface)  Create a Heroku account
  Create a project folder and organize the folder structure
  Create a virtual environment and activate it
