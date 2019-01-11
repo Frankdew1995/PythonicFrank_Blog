@@ -26,13 +26,12 @@
       <pubDate>Sat, 05 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/host_a_static_website_in_heroku/</guid>
-      <description>Host a static website in Heroku for FREE using Python Flask framework Guideline: Part 1: Push your website live to Heroku  Follow Heroku Documention
- Download Git Download Heroku CLI (Command Line Interface)  Create a Heroku account
- Create a project folder and organize the folder structure
- Create a virtual environment and activate it
- Init Git in project folder
- pip install dependencies
- pip install Flask pip install gunicorn  Create a Flask app/backend</description>
+      <description>Host a static website in Heroku for FREE using Python Flask framework Guideline: Part 1: Push your website live to Heroku 1.Follow Heroku Documention -Download [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) -Download [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) (Command Line Interface)  2.Create a Heroku account 3.Create a project folder and organize the folder structure - in your Terminal / Command Line Prompt $mkdir Website_Example
+$cd Website_Example
+$mkdir templates
+so your folder structure will look like:
+Website_Example
+ templates &amp;gt; index.</description>
     </item>
     
     <item>
@@ -59,7 +58,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/aboutme/</guid>
-      <description>From the past two years, Frank Du has been working as a procurement professional and gained a deep understanding of FMCG procurement market in Europe. However, he&amp;rsquo;s currently conquering his underdogs and embracing web and data technologies.</description>
+      <description>Python&amp;rsquo;s being now a major part of my life. This beautiful language has made my life much better and easier. After programming and using Python for 1.5 years, I thought now is a good time to(at least) give sth back to the community: share and teach about Python to help others that might potentially benefit from this beautiful language.
+This blog (and the YouTube channel associated) is all about Python. However, I&amp;rsquo;m by no means a Python guru or expert and you might be going to see I&amp;rsquo;m making some serious mistakes or setting some bad examples in my video tutorials.</description>
     </item>
     
     <item>
