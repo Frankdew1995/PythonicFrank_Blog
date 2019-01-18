@@ -3,12 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/contact/</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>/tutorial/extract_tabular_data_from_pdf_with_camelot/</loc>
     <lastmod>2019-01-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -43,7 +37,7 @@
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

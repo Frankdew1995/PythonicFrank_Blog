@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>Contact</title>
-      <link>/contact/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/contact/</guid>
-      <description> Your Name Email Address An email address is required.  Message   </description>
-    </item>
-    
-    <item>
       <title>Extract tabular data from PDF with Camelot</title>
       <link>/tutorial/extract_tabular_data_from_pdf_with_camelot/</link>
       <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
@@ -78,11 +69,12 @@ This blog (and the YouTube channel associated) is all about Python. However, I&a
     
     <item>
       <title></title>
-      <link>/tags/</link>
+      <link>/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/tags/</guid>
-      <description> Hello, world!   Hello, world! Discover this site by these tags. Primary Secondary Success Danger Warning Info Light Dark       </description>
+      <guid>/contact/</guid>
+      <description>title: Contact description: We&amp;rsquo;d love to hear from you type: page menu: main: {}
+weight: 100  Your Name Email Address An email address is required.  Message   &amp;ndash;&amp;gt;</description>
     </item>
     
   </channel>
