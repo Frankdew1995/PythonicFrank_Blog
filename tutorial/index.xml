@@ -6,10 +6,22 @@
     <description>Recent content in Tutorials on Pythonic Frank</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 13 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 20 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Send sms with Twilio API using Python</title>
+      <link>/tutorial/send_sms_with_twilio_api_using_python/</link>
+      <pubDate>Sun, 20 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/send_sms_with_twilio_api_using_python/</guid>
+      <description> Guideline  Sign up for a Twilio account
+ Grab a free Twilio phone number
+ Grab credentials: account_sid and auth_token
+  </description>
+    </item>
     
     <item>
       <title>Extract tabular data from PDF with Camelot</title>
