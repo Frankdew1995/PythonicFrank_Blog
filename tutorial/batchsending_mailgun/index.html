@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Pythonic Frank </title>
+    <title>Pythonic Frank  | Send Email in Batch with Mailgun API using Python</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -21,21 +21,19 @@
     
 
     
-      <link href="/tutorial/index.xml" rel="alternate" type="application/rss+xml" title="Pythonic Frank" />
-      <link href="/tutorial/index.xml" rel="feed" type="application/rss+xml" title="Pythonic Frank" />
-    
 
-    <meta property="og:title" content="Tutorials" />
-<meta property="og:description" content="Hi there" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/tutorial/" />
-
-
-
-<meta property="og:updated_time" content="2019-01-05T00:00:00&#43;00:00"/>
+    <meta property="og:title" content="Send Email in Batch with Mailgun API using Python" />
+<meta property="og:description" content="Batch Sending With Mailgun API Step 1: create a mailing list in mailgun dashboard:
+ You can upload a csv file to bulk upload to create a mailing list Or add one recipient at a time to create a mailing list.  Imagine you created a mailing list: no-reply@yourdomain.com
+How to proceed with coding: A. Send a general email without a custom greeting using Mailgun Mailing List import requests  def batch_mailing(): requests." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/tutorial/batchsending_mailgun/" />
 
 
 
+<meta property="article:published_time" content="2019-03-08T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2019-03-08T00:00:00&#43;00:00"/>
 
 
 
@@ -43,11 +41,27 @@
 
 
 
-<meta itemprop="name" content="Tutorials">
-<meta itemprop="description" content="Hi there">
 
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Tutorials"/>
-<meta name="twitter:description" content="Hi there"/>
+
+
+
+<meta itemprop="name" content="Send Email in Batch with Mailgun API using Python">
+<meta itemprop="description" content="Batch Sending With Mailgun API Step 1: create a mailing list in mailgun dashboard:
+ You can upload a csv file to bulk upload to create a mailing list Or add one recipient at a time to create a mailing list.  Imagine you created a mailing list: no-reply@yourdomain.com
+How to proceed with coding: A. Send a general email without a custom greeting using Mailgun Mailing List import requests  def batch_mailing(): requests.">
+
+
+<meta itemprop="datePublished" content="2019-03-08T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-03-08T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="543">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Send Email in Batch with Mailgun API using Python"/>
+<meta name="twitter:description" content="Batch Sending With Mailgun API Step 1: create a mailing list in mailgun dashboard:
+ You can upload a csv file to bulk upload to create a mailing list Or add one recipient at a time to create a mailing list.  Imagine you created a mailing list: no-reply@yourdomain.com
+How to proceed with coding: A. Send a general email without a custom greeting using Mailgun Mailing List import requests  def batch_mailing(): requests."/>
 
   </head>
 
@@ -55,10 +69,8 @@
 
     
 
-  
-  
-  <header class="cover bg-top" style="background-image: url('/images/pexels-photo-247932%20%281%29.jpeg');">
-    <div class="bg-black-60">
+  <header>
+    <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
@@ -123,133 +135,208 @@
   </div>
 </nav>
 
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          Tutorials
-        </h1>
-        
-      </div>
     </div>
   </header>
 
 
     <main class="pb7" role="main">
       
-  <article class="cf pa3 pa4-m pa4-l">
-    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links nested-img mid-gray">
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <p class="f6 b helvetica tracked">
+          TUTORIAL
+        </p>
+        <h1 class="f1">
+          Send Email in Batch with Mailgun API using Python
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
+        
+
+<h1 id="batch-sending-with-mailgun-api">Batch Sending With Mailgun API</h1>
+
+<p>Step 1: create a mailing list in mailgun <a href="https://app.mailgun.com/app/lists">dashboard</a>:</p>
+
+<ol>
+<li>You can upload a csv file to bulk upload to create a mailing list</li>
+<li>Or add one recipient at a time to create a mailing list.</li>
+</ol>
+
+<p>Imagine you created a mailing list: <strong>no-reply@yourdomain.com</strong></p>
+
+<h2 id="how-to-proceed-with-coding">How to proceed with coding:</h2>
+
+<h4 id="a-send-a-general-email-without-a-custom-greeting-using-mailgun-mailing-list">A. Send a general email without a custom greeting using Mailgun Mailing List</h4>
+
+<pre><code class="language-python">import requests
+</code></pre>
+
+<pre><code class="language-python">def batch_mailing():
+
+    requests.post(
+
+        &quot;https://api.mailgun.net/v3/yourdomain/messages&quot;,
+        auth=(&quot;api&quot;, &quot;your-api&quot;),
+        data = {
+            &quot;from&quot;: &quot;you@yourdomain.com&quot;,
+            &quot;to&quot;:&quot;no-reply@yourdomain.com&quot;, # this is the mailing list created in mailgun dashboard
+            &quot;subject&quot;:&quot; Prank message for you&quot;,
+            &quot;text&quot;: '''
+                        Hello,
+                        Can you hear me? It's me again.
+                    '''})
+
+# Run the function
+batch_mailing()
+</code></pre>
+
+<p>Running above code sends the message to all the members of your mailing list created in the Mailgun dashboard <strong>WITHOUT</strong> disclosing each member&rsquo;s individual email address in the &ldquo;to&rdquo; section of the email <strong>DESPITE</strong> this mailing list is currently placed in the &ldquo;to&rdquo; parameter.</p>
+
+<h4 id="b-send-a-custom-personalized-email-via-mailgun-template-variable">B. Send a custom &amp; personalized email via Mailgun <strong>Template Variable</strong>.</h4>
+
+<p>The code will take very much after. The only caveat is that we need to pass a <strong>template variable</strong> into the text body:</p>
+
+<p>Find more about template variable in the <a href="https://documentation.mailgun.com/en/latest/user_manual.html#batch-sending">mailgun documentation page</a></p>
+
+<p>Here&rsquo;s how we proceed: we will pass the first name of each member from the mailing list. the template variable for first name is: <strong>%recipient_fname%</strong></p>
+
+<pre><code class="language-python">import requests
+
+def batch_mailing():
+
+    requests.post(
+
+        &quot;https://api.mailgun.net/v3/yourdomain/messages&quot;,
+        auth=(&quot;api&quot;, &quot;your-api&quot;),
+        data = {
+            &quot;from&quot;: &quot;you@yourdomain.com&quot;,
+            &quot;to&quot;:&quot;no-reply@yourdomain.com&quot;, # this is the mailing list created in mailgun dashboard
+            &quot;subject&quot;:&quot; Prank message for you&quot;,
+            # passing the template variable for first name to send a custom email.
+            &quot;text&quot;: '''
+                        Hello %recipient_fname%,
+                        Can you hear me? It's me again.
+                    '''})
+
+# Run the function
+batch_mailing()
+</code></pre>
+
+<p>Running above code sends a custom message that looks like:(with the person&rsquo;s first name in the body text.)</p>
+
+<p>&ldquo;Hello Frank,
+Can you hear me? It&rsquo;s me again. &ldquo;,</p>
+
+<p>&ldquo;Hello Alice,
+Can you hear me? It&rsquo;s me again. &ldquo;,</p>
+
+<p>&hellip;&hellip;..</p>
+
+<p>**
+Do not worry about how a template variable is associated with an actual member from the mailing list. This mapping gets automatically created for you by Mailgun when a mailing list created. You just have to learn how to reference them correctly.
+**</p>
+
+<h4 id="c-send-an-email-without-mailgun-s-mailing-list-feature-and-custom-greetings">C. Send an email **WITHOUT ** Mailgun&rsquo;s mailing list feature and custom greetings.</h4>
+
+<p>In this case, your script will read the csv file of different recipients and send the email right up without using a mailing list. The down side of this is you lose the functionality of applying the template variables.</p>
+
+<pre><code class="language-python">import requests
+
+# Import pandas to read the recipients csv file.
+import pandas as pd
+</code></pre>
+
+<pre><code class="language-python"># Convert the pandas Series &quot;Email&quot; to a list
+
+recipients = pd.read_csv(&quot;MailingList.csv&quot;)[&quot;Email&quot;].values.tolist()
+</code></pre>
+
+<pre><code class="language-python">def batch_mailing():
+
+    requests.post(
+
+        &quot;https://api.mailgun.net/v3/your domain/messages&quot;,
+        auth=(&quot;api&quot;, &quot;your api key&quot;),
+        data = {
+            &quot;from&quot;: &quot;you@yourdomain.com&quot;,
+            &quot;to&quot;:&quot;you@yourdomain&quot;,
+            &quot;bcc&quot;:recipients,
+            &quot;subject&quot;:&quot; Prank message for you&quot;,
+            &quot;text&quot;: '''
+                    Hello,
+                    Can you hear me? It's me again.
+                    '''})
+#run the func
+batch_mailing()
+</code></pre>
+
+<p>In order for the above code to work, you have to <strong>at least</strong> pass one recipient or passing a list of recipients in &ldquo;to&rdquo;, and pass your recipients&rsquo; list in <strong>bcc</strong> so that you won&rsquo;t accidentally disclose all emails in the &ldquo;to&rdquo; field while sending the email. If <strong>no</strong> variable passed in &ldquo;to&rdquo; key, a 404 error will be throwed in this case.</p>
+
+      </div>
+    </article>
+    <aside class="ph3 mt2 mt6-ns">
       
-    </div>
-  </article>
-  <div class="mw8 center">
-    
-    <section class="flex-ns flex-wrap justify-around mt5">
+
+
+
+
+
+
+
+  <div class="bg-light-gray pa3">
+    <ul>
+      <li class="list b mb3">
+        5 More Tutorials
+      </li>
       
-        <div class="relative w-100  mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Tutorial</span>
-    <h1 class="f3 near-black">
-      <a href="/tutorial/host_a_static_website_in_heroku/" class="link black dim">
-        Host a static website in Heroku for FREE using Python Flask framework
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Host a static website in Heroku for FREE using Python Flask framework Guideline: Part 1: Push your website live to Heroku 1.Follow Heroku Documention -Download [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) -Download [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) (Command Line Interface)  2.Create a Heroku account 3.Create a project folder and organize the folder structure - in your Terminal / Command Line Prompt $mkdir Website_Example
-$cd Website_Example
-$mkdir templates
-so your folder structure will look like:
-Website_Example
- templates &gt; index.
-    </div>
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/tutorial/batchsending_mailgun/" class="link ph2 pv2 db black o-50">
+            Send Email in Batch with Mailgun API using Python
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/tutorial/send_sms_with_twilio_api_using_python/" class="link ph2 pv2 db black">
+            Send sms with Twilio API using Python
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/tutorial/extract_tabular_data_from_pdf_with_camelot/" class="link ph2 pv2 db black">
+            Extract tabular data from PDF with Camelot
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/tutorial/host_a_static_website_in_heroku/" class="link ph2 pv2 db black">
+            Host a static website in Heroku for FREE using Python Flask framework
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/tutorial/mailgun/" class="link ph2 pv2 db black">
+            Send Email from a custom domain with Mailgun API using Python
+          </a>
+        </li>
+      
+        <li class="list f5 w-100 hover-bg-white nl1">
+          
+          <a href="/tutorial/second_posts/" class="link ph2 pv2 db black">
+            Natural Language Processing and sentiment analysis with TextBlob: a Python NLP library
+          </a>
+        </li>
+      
+    </ul>
   </div>
-</div>
 
-        </div>
-      
-        <div class="relative w-100  mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Tutorial</span>
-    <h1 class="f3 near-black">
-      <a href="/tutorial/mailgun/" class="link black dim">
-        Send Email from a custom domain with Mailgun API using Python
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Send Email from a custom domain with Mailgun API using Python Intro There are plenty of tutorials on the Internet teaching how to send an Email using Python. Why bothering with another tutorial talking about sending Email with a custom domain? Well at this point, I agree with you that you&rsquo;re right. But this tutorial is aiming for the folks who might be running a professional online business or website and looking for possibilities of sending customers and marketing emails in an easy and scalable manner while being able to maintain their brandings (Such as using their domains or sub-domains).
-    </div>
-  </div>
-</div>
 
-        </div>
-      
-        <div class="relative w-100  mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Tutorial</span>
-    <h1 class="f3 near-black">
-      <a href="/tutorial/second_posts/" class="link black dim">
-        Natural Language Processing and sentiment analysis with TextBlob: a Python NLP library
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      
-    </div>
-  </div>
-</div>
-
-        </div>
-      
-    </section>
-  
-
-<ul class="pagination">
-    
-    <li>
-        <a href="/tutorial/" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
-    </li>
-    
-    <li
-    >
-    <a href="/tutorial/" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
-    </li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    ><a href="/tutorial/">1</a></li>
-    
-    
-    
-    
-    
-    
-        
-        
-    
-    
-    <li
-    class="active"><a href="/tutorial/page/2/">2</a></li>
-    
-    
-    <li
-    class="disabled">
-    <a href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
-    </li>
-    
-    <li>
-        <a href="/tutorial/page/2/" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
-    </li>
-    
-</ul>
-
+    </aside>
   </div>
 
     </main>

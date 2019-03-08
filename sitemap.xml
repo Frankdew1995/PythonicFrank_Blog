@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tutorial/batchsending_mailgun/</loc>
+    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/tutorial/send_sms_with_twilio_api_using_python/</loc>
     <lastmod>2019-01-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -57,7 +64,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-01-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -70,7 +77,7 @@
   
   <url>
     <loc>/tutorial/</loc>
-    <lastmod>2019-01-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-08T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
