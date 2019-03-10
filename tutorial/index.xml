@@ -6,18 +6,18 @@
     <description>Recent content in Tutorials on Pythonic Frank</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 10 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Send Email in Batch with Mailgun API using Python</title>
+      <title>Send Email in Batch and Attachments with Mailgun API using Python</title>
       <link>/tutorial/batchsending_mailgun/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/batchsending_mailgun/</guid>
-      <description>Batch Sending With Mailgun API Step 1: create a mailing list in mailgun dashboard:
+      <description>1.Batch Sending With Mailgun API Step 1: create a mailing list in mailgun dashboard:
  You can upload a csv file to bulk upload to create a mailing list Or add one recipient at a time to create a mailing list.  Imagine you created a mailing list: no-reply@yourdomain.com
 How to proceed with coding: A. Send a general email without a custom greeting using Mailgun Mailing List import requests  def batch_mailing(): requests.</description>
     </item>
