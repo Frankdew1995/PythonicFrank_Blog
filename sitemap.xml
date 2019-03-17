@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tutorial/host_static_sites_with_netlify/</loc>
+    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/tutorial/batchsending_mailgun/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -64,7 +71,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -77,7 +84,7 @@
   
   <url>
     <loc>/tutorial/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-17T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
