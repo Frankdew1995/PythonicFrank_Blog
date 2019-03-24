@@ -18,7 +18,7 @@
       
       <guid>/tutorial/nlp_and_sentiment_analysis_with_textblob_and_python/</guid>
       <description>What is NLP(Natural Language Processing)? Natural language processing (NLP) is a subfield of computer science, information engineering, and artificial intelligence concerned with the interactions between computers and human (natural) languages, in particular how to program computers to process and analyze large amounts of natural language data. (Wikepedia) Dependency to install: $ pip install textblob
-Some features of TextBlob:  Noun Phrase Extraction Sentiment Analysis Tokenization Words Lemmatization Spell Check Translation  1.</description>
+Some features of TextBlob:  Noun Phrase Extraction Sentiment Analysis Tokenization Words Lemmatization Spell Check Translation  # NLP_and_Sentiment_Analysis_With_TextBlob</description>
     </item>
     
     <item>
@@ -110,6 +110,16 @@ This blog (and the YouTube channel associated) is all about Python. However, I&a
       <guid>/contact/</guid>
       <description>title: Contact description: We&amp;rsquo;d love to hear from you type: page menu: main: {}
 weight: 100  Your Name Email Address An email address is required.  Message   &amp;ndash;&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/tutorial/draft/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/draft/</guid>
+      <description>NLP_and_Sentiment_Analysis_With_TextBlob from textblob import TextBlob import nltk  Install &amp;ldquo;brown&amp;rdquo; and &amp;ldquo;wordnet&amp;rdquo; using NLTK:
+nltk.download(&amp;quot;wordnet&amp;quot;) nltk.download(&amp;quot;brown&amp;quot;)  [nltk_data] Downloading package wordnet to /Users/frankdu/nltk_data... [nltk_data] Package wordnet is already up-to-date! [nltk_data] Downloading package brown to /Users/frankdu/nltk_data... [nltk_data] Package brown is already up-to-date! True  sample text data: zen of Python text1 = &#39;&#39;&#39; Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated.</description>
     </item>
     
   </channel>
