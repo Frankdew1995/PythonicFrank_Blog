@@ -6,10 +6,20 @@
     <description>Recent content on Pythonic Frank</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 17 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 24 Mar 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Natural Language Processing and sentiment analysis with TextBlob: a Python NLP library</title>
+      <link>/tutorial/nlp_and_sentiment_analysis_with_textblob_and_python/</link>
+      <pubDate>Sun, 24 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/nlp_and_sentiment_analysis_with_textblob_and_python/</guid>
+      <description>What is NLP(Natural Language Processing)? Natural language processing (NLP) is a subfield of computer science, information engineering, and artificial intelligence concerned with the interactions between computers and human (natural) languages, in particular how to program computers to process and analyze large amounts of natural language data. (Wikepedia) Dependency to install: $ pip install textblob
+Some features of TextBlob:  Noun Phrase Extraction Sentiment Analysis Tokenization Words Lemmatization Spell Check Translation  1.</description>
+    </item>
     
     <item>
       <title>Host static websites with Netlify</title>
@@ -80,15 +90,6 @@ Website_Example</description>
       
       <guid>/tutorial/mailgun/</guid>
       <description>Send Email from a custom domain with Mailgun API using Python Intro There are plenty of tutorials on the Internet teaching how to send an Email using Python. Why bothering with another tutorial talking about sending Email with a custom domain? Well at this point, I agree with you that you&amp;rsquo;re right. But this tutorial is aiming for the folks who might be running a professional online business or website and looking for possibilities of sending customers and marketing emails in an easy and scalable manner while being able to maintain their brandings (Such as using their domains or sub-domains).</description>
-    </item>
-    
-    <item>
-      <title>Natural Language Processing and sentiment analysis with TextBlob: a Python NLP library</title>
-      <link>/tutorial/second_posts/</link>
-      <pubDate>Sun, 22 Apr 2018 11:11:42 +0200</pubDate>
-      
-      <guid>/tutorial/second_posts/</guid>
-      <description></description>
     </item>
     
     <item>
