@@ -17,7 +17,7 @@
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/build-a-personal-weather-sms-service-with-python-and-twilio/</guid>
-      <description> Prerequisites 1. Twilio: Twilio Account, Phone number, and account sid and auth token. 2. A PythonAnywhere account 3. An Open Weather Map acount and API Key Why doing this? How this works? ! </description>
+      <description>Prerequisites 1. Twilio: Twilio Account, Phone number, and account sid and auth token. 2. A PythonAnywhere account 3. An Open Weather Map acount and API Key Why doing this? How this works? ! Dependency to install: $ pip install pyowm $ pip install twilio</description>
     </item>
     
     <item>
