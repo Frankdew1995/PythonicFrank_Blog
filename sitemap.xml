@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tutorial/build-a-personal-weather-sms-service-with-python-and-twilio/</loc>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/tutorial/nlp_and_sentiment_analysis_with_textblob_and_python/</loc>
     <lastmod>2019-03-24T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -77,7 +84,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -90,7 +97,7 @@
   
   <url>
     <loc>/tutorial/</loc>
-    <lastmod>2019-03-24T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
