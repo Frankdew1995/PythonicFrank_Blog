@@ -23,7 +23,7 @@
     
 
     <meta property="og:title" content="Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere" />
-<meta property="og:description" content="Prerequisites 1. Twilio: Twilio Account, Phone number, and account sid and auth token. 2. A PythonAnywhere account 3. An Open Weather Map acount and API Key Why doing this? How this works? ! Dependency to install: $ pip install pyowm $ pip install twilio" />
+<meta property="og:description" content="Have you always been forgetful about checking the weather before going outdoors and got really washed out by the rainy days? In this tutorial, I&rsquo;m sharing with you how to build a cloud-based weather SMS service that runs as scheduled to message you about the weather determining if you need an umbrella or not during the day. Prerequisites 1. Twilio: Twilio Account, Phone number, and account sid and auth token." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/tutorial/build-a-personal-weather-sms-service-with-python-and-twilio/" />
 
@@ -44,18 +44,18 @@
 
 
 <meta itemprop="name" content="Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere">
-<meta itemprop="description" content="Prerequisites 1. Twilio: Twilio Account, Phone number, and account sid and auth token. 2. A PythonAnywhere account 3. An Open Weather Map acount and API Key Why doing this? How this works? ! Dependency to install: $ pip install pyowm $ pip install twilio">
+<meta itemprop="description" content="Have you always been forgetful about checking the weather before going outdoors and got really washed out by the rainy days? In this tutorial, I&rsquo;m sharing with you how to build a cloud-based weather SMS service that runs as scheduled to message you about the weather determining if you need an umbrella or not during the day. Prerequisites 1. Twilio: Twilio Account, Phone number, and account sid and auth token.">
 
 
 <meta itemprop="datePublished" content="2019-04-07T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-04-07T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="44">
+<meta itemprop="wordCount" content="224">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere"/>
-<meta name="twitter:description" content="Prerequisites 1. Twilio: Twilio Account, Phone number, and account sid and auth token. 2. A PythonAnywhere account 3. An Open Weather Map acount and API Key Why doing this? How this works? ! Dependency to install: $ pip install pyowm $ pip install twilio"/>
+<meta name="twitter:description" content="Have you always been forgetful about checking the weather before going outdoors and got really washed out by the rainy days? In this tutorial, I&rsquo;m sharing with you how to build a cloud-based weather SMS service that runs as scheduled to message you about the weather determining if you need an umbrella or not during the day. Prerequisites 1. Twilio: Twilio Account, Phone number, and account sid and auth token."/>
 
   </head>
 
@@ -148,6 +148,8 @@
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
         
 
+<h4 id="have-you-always-been-forgetful-about-checking-the-weather-before-going-outdoors-and-got-really-washed-out-by-the-rainy-days-in-this-tutorial-i-m-sharing-with-you-how-to-build-a-cloud-based-weather-sms-service-that-runs-as-scheduled-to-message-you-about-the-weather-determining-if-you-need-an-umbrella-or-not-during-the-day">Have you always been forgetful about checking the weather before going outdoors and got really washed out by the rainy days? In this tutorial, I&rsquo;m sharing with you how to build a cloud-based weather SMS service that runs as scheduled to message you about the weather determining if you need an umbrella or not during the day.</h4>
+
 <h2 id="prerequisites">Prerequisites</h2>
 
 <h3 id="1-twilio-https-www-twilio-com-twilio-account-phone-number-and-account-sid-and-auth-token">1. <a href="https://www.twilio.com/">Twilio</a>: Twilio Account, Phone number, and account sid and auth token.</h3>
@@ -164,8 +166,82 @@
 
 <h2 id="dependency-to-install">Dependency to install:</h2>
 
-<p><strong>$ pip install pyowm</strong>
-<strong>$ pip install twilio</strong></p>
+<p><strong>$ pip install pyowm</strong></p>
+
+<p><strong>$ pip install twilio</strong></p>
+
+<pre><code class="language-python">'''
+
+Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere
+
+'''
+from pyowm import OWM
+from twilio.rest import Client
+
+from credentials import my_twilio_number, account_sid, auth_token, my_phone_number
+
+
+# Instantiate an owm object
+
+owm = OWM('your-open-weather-map-api-key')
+
+forecast = owm.weather_at_place(&quot;Dusseldorf, DE&quot;)
+
+weather = forecast.get_weather()
+
+
+def umbrellaNotRequired():
+
+
+    rain = weather.get_rain()
+
+    status = weather.get_status().lower().strip()
+
+    if len(rain) == 0 or status == &quot;clear&quot;:
+
+        return True
+
+
+def send_weather_sms():
+
+
+    client = Client(account_sid, auth_token)
+
+
+    if owm.is_API_online:
+
+        if umbrellaNotRequired():
+
+
+            temperature = weather.get_temperature(&quot;celsius&quot;)[&quot;temp&quot;]
+
+            humidity = weather.get_humidity()
+
+            client.messages.create(
+                from_=my_twilio_number,
+                to=my_phone_number,
+                body=f'''
+                    Hey, sky is clear and you ain't need an umbrella. Weather details:
+                    1. Humidity:{humidity} %,
+                    2. Temperature:{temperature} celsius
+                ''')
+
+    else:
+
+        client.messages.create(
+            from_=my_twilio_number,
+            to=my_phone_number,
+            body='''
+                    Hey, weather service not available and check it out by yourself
+                    ''')
+
+
+if __name__ == '__main__':
+
+
+    send_weather_sms()
+
+</code></pre>
 
       </div>
     </article>
@@ -181,7 +257,7 @@
   <div class="bg-light-gray pa3">
     <ul>
       <li class="list b mb3">
-        8 More Tutorials
+        7 More Tutorials
       </li>
       
         <li class="list f5 w-100 hover-bg-white nl1">
@@ -237,13 +313,6 @@
           
           <a href="/tutorial/mailgun/" class="link ph2 pv2 db black">
             Send Email from a custom domain with Mailgun API using Python
-          </a>
-        </li>
-      
-        <li class="list f5 w-100 hover-bg-white nl1">
-          
-          <a href="/tutorial/draft/" class="link ph2 pv2 db black">
-            
           </a>
         </li>
       
