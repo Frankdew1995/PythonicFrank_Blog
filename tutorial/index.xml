@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere</title>
-      <link>/tutorial/build-a-personal-weather-sms-service-with-python-and-twilio/</link>
+      <title>Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere with Open Weather API</title>
+      <link>/tutorial/build_a_cloud_based_weather_sms_service_using_python_twilio_and_pythonanywhere_with_open_weather_api/</link>
       <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/build-a-personal-weather-sms-service-with-python-and-twilio/</guid>
-      <description>Have you always been forgetful about checking the weather before going outdoors and got really washed out by the rainy days? In this tutorial, I&amp;rsquo;m sharing with you how to build a cloud-based weather SMS service that runs as scheduled to message you about the weather determining if you need an umbrella or not during the day. Prerequisites 1. Twilio: Twilio Account, Phone number, and account sid and auth token.</description>
+      <guid>/tutorial/build_a_cloud_based_weather_sms_service_using_python_twilio_and_pythonanywhere_with_open_weather_api/</guid>
+      <description>Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere Have you always been forgetful about checking the weather before going outdoors and got really washed out by the rainy days? In this tutorial, I&amp;rsquo;m sharing with you how to build a cloud-based weather SMS service that runs as scheduled to message you about the weather determining if you need an umbrella or not during the day. Prerequisites 1.</description>
     </item>
     
     <item>

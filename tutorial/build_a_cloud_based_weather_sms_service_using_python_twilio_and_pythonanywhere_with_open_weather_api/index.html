@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Pythonic Frank  | Host a static website in Heroku for FREE using Python Flask framework</title>
+    <title>Pythonic Frank  | Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere with Open Weather API</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -22,24 +22,16 @@
 
     
 
-    <meta property="og:title" content="Host a static website in Heroku for FREE using Python Flask framework" />
-<meta property="og:description" content="Host a static website in Heroku for FREE using Python Flask framework  Guideline: Part 1: Push your website live to Heroku 1.Follow Heroku Documention -Download [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) -Download [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) (Command Line Interface)  2.Create a Heroku account 3.Create a project folder and organize the folder structure - in your Terminal / Command Line Prompt $mkdir Website_Example
-$cd Website_Example
-$mkdir templates
-so your folder structure will look like:
-Website_Example" />
+    <meta property="og:title" content="Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere with Open Weather API" />
+<meta property="og:description" content="Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere Have you always been forgetful about checking the weather before going outdoors and got really washed out by the rainy days? In this tutorial, I&rsquo;m sharing with you how to build a cloud-based weather SMS service that runs as scheduled to message you about the weather determining if you need an umbrella or not during the day. Prerequisites 1." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="/tutorial/host_a_static_website_in_heroku/" />
+<meta property="og:url" content="/tutorial/build_a_cloud_based_weather_sms_service_using_python_twilio_and_pythonanywhere_with_open_weather_api/" />
 
 
 
-<meta property="article:published_time" content="2019-01-05T00:00:00&#43;00:00"/>
+<meta property="article:published_time" content="2019-04-07T00:00:00&#43;00:00"/>
 
-<meta property="article:modified_time" content="2019-01-05T00:00:00&#43;00:00"/>
-
-
-
-
+<meta property="article:modified_time" content="2019-04-07T00:00:00&#43;00:00"/>
 
 
 
@@ -47,27 +39,23 @@ Website_Example" />
 
 
 
-<meta itemprop="name" content="Host a static website in Heroku for FREE using Python Flask framework">
-<meta itemprop="description" content="Host a static website in Heroku for FREE using Python Flask framework  Guideline: Part 1: Push your website live to Heroku 1.Follow Heroku Documention -Download [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) -Download [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) (Command Line Interface)  2.Create a Heroku account 3.Create a project folder and organize the folder structure - in your Terminal / Command Line Prompt $mkdir Website_Example
-$cd Website_Example
-$mkdir templates
-so your folder structure will look like:
-Website_Example">
 
 
-<meta itemprop="datePublished" content="2019-01-05T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2019-01-05T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="451">
+
+
+<meta itemprop="name" content="Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere with Open Weather API">
+<meta itemprop="description" content="Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere Have you always been forgetful about checking the weather before going outdoors and got really washed out by the rainy days? In this tutorial, I&rsquo;m sharing with you how to build a cloud-based weather SMS service that runs as scheduled to message you about the weather determining if you need an umbrella or not during the day. Prerequisites 1.">
+
+
+<meta itemprop="datePublished" content="2019-04-07T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-04-07T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="551">
 
 
 
 <meta itemprop="keywords" content="" />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Host a static website in Heroku for FREE using Python Flask framework"/>
-<meta name="twitter:description" content="Host a static website in Heroku for FREE using Python Flask framework  Guideline: Part 1: Push your website live to Heroku 1.Follow Heroku Documention -Download [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) -Download [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) (Command Line Interface)  2.Create a Heroku account 3.Create a project folder and organize the folder structure - in your Terminal / Command Line Prompt $mkdir Website_Example
-$cd Website_Example
-$mkdir templates
-so your folder structure will look like:
-Website_Example"/>
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere with Open Weather API"/>
+<meta name="twitter:description" content="Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere Have you always been forgetful about checking the weather before going outdoors and got really washed out by the rainy days? In this tutorial, I&rsquo;m sharing with you how to build a cloud-based weather SMS service that runs as scheduled to message you about the weather determining if you need an umbrella or not during the day. Prerequisites 1."/>
 
   </head>
 
@@ -154,187 +142,132 @@ Website_Example"/>
           TUTORIAL
         </p>
         <h1 class="f1">
-          Host a static website in Heroku for FREE using Python Flask framework
+          Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere with Open Weather API
         </h1>
       </header>
       <div class="nested-copy-line-height lh-copy f4 nested-links nested-img mid-gray">
         
 
-<h1 id="host-a-static-website-in-heroku-for-free-using-python-flask-framework">Host a static website in Heroku for FREE using Python Flask framework</h1>
+<h1 id="build-a-cloud-based-weather-sms-service-using-python-twilio-and-pythonanywhere">Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere</h1>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wm8hjrf5wPQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h4 id="have-you-always-been-forgetful-about-checking-the-weather-before-going-outdoors-and-got-really-washed-out-by-the-rainy-days-in-this-tutorial-i-m-sharing-with-you-how-to-build-a-cloud-based-weather-sms-service-that-runs-as-scheduled-to-message-you-about-the-weather-determining-if-you-need-an-umbrella-or-not-during-the-day">Have you always been forgetful about checking the weather before going outdoors and got really washed out by the rainy days? In this tutorial, I&rsquo;m sharing with you how to build a cloud-based weather SMS service that runs as scheduled to message you about the weather determining if you need an umbrella or not during the day.</h4>
 
-<h1 id="guideline">Guideline:</h1>
+<h2 id="prerequisites">Prerequisites</h2>
 
-<h2 id="part-1-push-your-website-live-to-heroku">Part 1: Push your website live to Heroku</h2>
+<h3 id="1-twilio-https-www-twilio-com-twilio-account-phone-number-and-account-sid-and-auth-token">1. <a href="https://www.twilio.com/">Twilio</a>: Twilio Account, Phone number, and account sid and auth token.</h3>
 
-<h3 id="1-follow-heroku-documention-https-devcenter-heroku-com-articles-getting-started-with-python">1.Follow <a href="https://devcenter.heroku.com/articles/getting-started-with-python">Heroku Documention</a></h3>
+<h3 id="2-a-pythonanywhere-account-https-pythonanywhere-com">2. A <a href="https://pythonanywhere.com">PythonAnywhere account</a></h3>
 
-<pre><code>-Download [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
--Download [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-python#set-up) (Command Line Interface)
+<h3 id="3-an-open-weather-map-acount-https-openweathermap-org-and-api-key">3. An <a href="https://openweathermap.org/">Open Weather Map acount</a> and API Key</h3>
+
+<h2 id="how-this-works">How this works? !</h2>
+
+<p><img src="https://docs.google.com/drawings/d/e/2PACX-1vQwO6F1_4IminFN_0HXfrJDfrwDeLv2qD0C76h5vfmY5GmKZEDHaQjYlN3-l04jR4fgvW-InPGK1GUN/pub?w=960&amp;h=720"></p>
+
+<p>As this diagram indicates, we will have a Python script that&rsquo;s running in a cloud environment (<a href="https://pythonanywhere.com">PythonAnywhere</a>) which will be scheduled to run daily to send HTTP request to <a href="https://openweathermap.org/api">Open Weather API</a> to fetch a current day&rsquo;s weather report (specifically for fetching the rain data). Then it will notify us these data via SMS by using <a href="https://www.twilio.com/">Twilio</a> Python rest client (You will need a Twilio API key and account_sid for this.)</p>
+
+<p>First of all, let&rsquo;s set up our project folder a bit. In my case, my project folder looked like the following:</p>
+
+<p><strong>App.py</strong> - this is where our main functions run</p>
+
+<p><strong>Credentials.py</strong> - this is where I store my secret credentials so that I&rsquo;m not showing them during tutorial recording in my main script. (If you want, you can have this all in one .py file or save these secrets as environment variables. )</p>
+
+<p>Also in order for us to have a more Pythonic API interface to work with Open Weather Map, we will use a Python wrapper module called <a href="https://pyowm.readthedocs.io/en/latest/">PYOWM</a> to interact with open weather map rest API.</p>
+
+<h2 id="write-the-main-script-and-test-it-locally">Write the main script and test it locally</h2>
+
+<p>Let&rsquo;s import necessary modules:</p>
+
+<pre><code class="language-python">from pyowm import OWM ## import Open Weather Map api wrapper
+from twilio.rest import Client ## import twilio rest Python client
 </code></pre>
 
-<h3 id="2-create-a-heroku-account-https-signup-heroku-com">2.Create a <a href="https://signup.heroku.com/">Heroku account</a></h3>
+<p>then we should import our credentials stored in Credentials.py:</p>
 
-<h3 id="3-create-a-project-folder-and-organize-the-folder-structure-in-your-terminal-command-line-prompt">3.Create a project folder and organize the folder structure - in your Terminal / Command Line Prompt</h3>
-
-<p>$mkdir Website_Example</p>
-
-<p>$cd Website_Example</p>
-
-<p>$mkdir templates</p>
-
-<p>so your folder structure will look like:</p>
-
-<p><strong>Website_Example</strong></p>
-
-<blockquote>
-<p><strong>templates</strong>
-&gt; index.html</p>
-</blockquote>
-
-<h3 id="4-create-a-virtual-environment-and-activate-it">4.Create a virtual environment and activate it</h3>
-
-<p><strong>$pip install virtualenv</strong></p>
-
-<p>make a virtualenv called &ldquo;venv&rdquo;:</p>
-
-<p><strong>$virtualenv venv</strong></p>
-
-<p>activate this virtual env:</p>
-
-<pre><code>- macOS:
-
-    $source venv\bin\activate
-
-- windows:
-
-    $venv\Scripts\activate
+<pre><code class="language-python">from credentials import (my_twilio_number, account_sid,
+                         auth_token, my_phone_number)
 </code></pre>
 
-<h3 id="5-init-git-in-project-folder">5.Init Git in project folder</h3>
+<p>Instantiate an OWM object with your <a href="https://home.openweathermap.org/api_keys">Open Weather API key</a></p>
 
-<pre><code>$git init
+<pre><code class="language-python"># Instantiate an owm object
+
+owm = OWM('your Open Weather Map API KEY')
+
+
+# Construct a forecast
+
+forecast = owm.weather_at_place(&quot;City, Country&quot;) # (London, GB)
+
+# Get the weather object to fetch specific data.
+
+weather = forecast.get_weather()
 </code></pre>
 
-<h3 id="6-pip-install-all-required-dependencies">6.pip install all required dependencies:</h3>
+<p>we define a function umbrellaNotRequired() that returns True if there&rsquo;s no rain. Otherwise, this function will return False.</p>
 
-<pre><code>$pip install Flask
+<pre><code class="language-python">def umbrellaNotRequired():
 
-$pip install gunicorn
+    # Use get_rain() method from weather object.
+    rain = weather.get_rain()
+    status = weather.get_status().lower().strip()
+
+    if len(rain) == 0 or status == &quot;clear&quot;:
+
+        return True
+    else:
+        return False
 </code></pre>
 
-<h3 id="7-create-a-flask-app-backend">7.Create a Flask app/backend</h3>
+<p>Now we are making a function mainly for constructing a Twilio rest client to send SMS meanwhile validating umbrellaNotRequired() to send custom notifications. Learn more about how to use Python Twilio API <a href="https://frankdu.co/tutorial/send_sms_with_twilio_api_using_python/">here</a></p>
 
-<pre><code>$touch index.py
+<pre><code class="language-python">def send_weather_sms():
+
+    # Make a Twilio rest client with api token and account_sid
+    client = Client(account_sid, auth_token)
+
+    # Check if the OWM API is onine.
+    if owm.is_API_online:
+
+        if umbrellaNotRequired():
+
+            # Get temp
+            temperature = weather.get_temperature(&quot;celsius&quot;)[&quot;temp&quot;]
+
+            # Get the humidity
+            humidity = weather.get_humidity()
+
+            client.messages.create(
+                from_=my_twilio_number,
+                to=my_phone_number,
+                body=f'''
+                    Hey, sky is clear and you ain't need an umbrella. Weather details:
+                    1. Humidity:{humidity} %,
+                    2. Temperature:{temperature} celsius
+                ''')
+            else:
+
+                client.messages.create(
+                from_=my_twilio_number,
+                to=my_phone_number,
+                body=&quot;Hey, you got an umbrella warning!!!&quot;)
+
+    else:
+
+        client.messages.create(
+            from_=my_twilio_number,
+            to=my_phone_number,
+            body='''Hey, weather service not available and check it out by yourself
+                    ''')
 </code></pre>
 
-<pre><code class="language-python">from flask import Flask, render_template
+<p>Run the function.</p>
 
+<pre><code class="language-python">if __name__ == '__main__':
 
-app = Flask(__name__)
+    send_weather_sms()
 
-
-@app.route(&quot;/&quot;) #www.domain.com - render homepage
-def index():
-
-    return render_template(&quot;index.html&quot;)
-
-
-if __name__ == &quot;__main__&quot;:
-
-    app.run(debug=False)
 </code></pre>
-
-<h3 id="8-create-a-procfile">8.Create a Procfile</h3>
-
-<p>$touch Procfile</p>
-
-<p>make sure you capitalize the first letter and name the file WITHOUT any extension. in your Procfile, include:</p>
-
-<p><strong>web: gunicorn index:app</strong></p>
-
-<p>make sure you:</p>
-
-<ol>
-<li><p>do <strong>NOT</strong> include any space between &ldquo;index:&rdquo; and &ldquo;app&rdquo; - &ldquo;index&rdquo; is the .py file where your Flask backend lives in and &ldquo;app&rdquo; is the variable name of the flask object that&rsquo;s defined in index.py file.</p></li>
-
-<li><p>include <strong>ONE</strong> space between &ldquo;web:&rdquo; and &ldquo;gunicorn&rdquo; -</p></li>
-</ol>
-
-<h3 id="9-create-a-requirements-txt-file">9.Create a requirements.txt file</h3>
-
-<p>$pip freeze &gt; requirements.txt</p>
-
-<h3 id="10-push-our-app-website-to-heroku">10.Push our app/website to Heroku</h3>
-
-<pre><code>$heroku login
-</code></pre>
-
-<p>-your browser pops up asking you to log into your Heroku CLI</p>
-
-<pre><code>$heroku create
-</code></pre>
-
-<p>-create a new Heroku app randomly named by Heroku (you can pass a specific App name but it has to be
-uniquely available.)</p>
-
-<pre><code>$ git status
-</code></pre>
-
-<p>-track your file changes and locate the untracked files detected by git</p>
-
-<pre><code>$ git add .
-</code></pre>
-
-<p>-add all files to git staging area so that you can push files to Heroky in next steps</p>
-
-<pre><code>$ git commit -m&quot;give your wished comments for app pushing&quot;
-</code></pre>
-
-<p>-this is to commit all your changes</p>
-
-<pre><code>$ git push heroku master
-</code></pre>
-
-<p>-finally pushing your apps and files to Heroku server
-wait a few minutes and let Heroku do all the heavy liftings for you. After successfully deploying:</p>
-
-<pre><code>$heroku open
-</code></pre>
-
-<p>-open your app url and view it in your browser.</p>
-
-<h2 id="part-2-add-a-custom-domain-to-your-heroku-hosted-app">Part 2: Add a custom domain to your Heroku hosted app</h2>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3k8vt8E4qCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<ul>
-<li><p>Get a free domain</p>
-
-<ol>
-<li>Go to <a href="https:freenom.com">freenom</a> to sign up an account</li>
-<li>Grab a free domain</li>
-</ol></li>
-
-<li><p>Visit your hosted webste in Heroku</p>
-
-<ol>
-<li><p>Log in Heroku and go to <a href="https://https://dashboard.heroku.com/apps">dashboard</a> to visit the hosted app</p></li>
-
-<li><p>Add custom domains in your app&rsquo;s setting page.</p></li>
-</ol></li>
-
-<li><p>Add Heroku DNS CNAME records to Freenom DNS console.</p>
-
-<ol>
-<li><p>Head over to Freenom DNS Console</p></li>
-
-<li><p>Point CNMAE records to Heroku-required records</p></li>
-</ol></li>
-
-<li><p>Await a few minutes to see your website live @ yourwebsite.com</p></li>
-</ul>
 
       </div>
     </article>
@@ -355,7 +288,7 @@ wait a few minutes and let Heroku do all the heavy liftings for you. After succe
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
-          <a href="/tutorial/build_a_cloud_based_weather_sms_service_using_python_twilio_and_pythonanywhere_with_open_weather_api/" class="link ph2 pv2 db black">
+          <a href="/tutorial/build_a_cloud_based_weather_sms_service_using_python_twilio_and_pythonanywhere_with_open_weather_api/" class="link ph2 pv2 db black o-50">
             Build a cloud based weather SMS service using Python, Twilio and PythonAnywhere with Open Weather API
           </a>
         </li>
@@ -397,7 +330,7 @@ wait a few minutes and let Heroku do all the heavy liftings for you. After succe
       
         <li class="list f5 w-100 hover-bg-white nl1">
           
-          <a href="/tutorial/host_a_static_website_in_heroku/" class="link ph2 pv2 db black o-50">
+          <a href="/tutorial/host_a_static_website_in_heroku/" class="link ph2 pv2 db black">
             Host a static website in Heroku for FREE using Python Flask framework
           </a>
         </li>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tutorial/build-a-personal-weather-sms-service-with-python-and-twilio/</loc>
+    <loc>/tutorial/build_a_cloud_based_weather_sms_service_using_python_twilio_and_pythonanywhere_with_open_weather_api/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
