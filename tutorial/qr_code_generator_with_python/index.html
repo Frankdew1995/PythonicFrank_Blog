@@ -23,7 +23,7 @@
     
 
     <meta property="og:title" content="Make a QR Code generator (with data store function) with Python" />
-<meta property="og:description" content=" Make a QR Code generator (with data store function) with Python Some features of this Python App: 1. Read any csv files and save each row as a small single dataset into the QR Code 2. Generate these QR Code images with data saved in 3. QR Code images should be readable by a QR Code scanner (e.g. a mobile device.) " />
+<meta property="og:description" content="Make a QR Code generator (with data store function) with Python Some features of this Python App: 1. Read any csv files and save each row as a small single dataset into the QR Code 2. Generate these QR Code images with data saved in 3. QR Code images should be readable by a QR Code scanner (e.g. a mobile device.) Dependencies to install (Some of them you might not happen to use): Django==2." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/tutorial/qr_code_generator_with_python/" />
 
@@ -44,18 +44,18 @@
 
 
 <meta itemprop="name" content="Make a QR Code generator (with data store function) with Python">
-<meta itemprop="description" content=" Make a QR Code generator (with data store function) with Python Some features of this Python App: 1. Read any csv files and save each row as a small single dataset into the QR Code 2. Generate these QR Code images with data saved in 3. QR Code images should be readable by a QR Code scanner (e.g. a mobile device.) ">
+<meta itemprop="description" content="Make a QR Code generator (with data store function) with Python Some features of this Python App: 1. Read any csv files and save each row as a small single dataset into the QR Code 2. Generate these QR Code images with data saved in 3. QR Code images should be readable by a QR Code scanner (e.g. a mobile device.) Dependencies to install (Some of them you might not happen to use): Django==2.">
 
 
 <meta itemprop="datePublished" content="2019-05-02T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-05-02T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="61">
+<meta itemprop="wordCount" content="694">
 
 
 
 <meta itemprop="keywords" content="" />
 <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Make a QR Code generator (with data store function) with Python"/>
-<meta name="twitter:description" content=" Make a QR Code generator (with data store function) with Python Some features of this Python App: 1. Read any csv files and save each row as a small single dataset into the QR Code 2. Generate these QR Code images with data saved in 3. QR Code images should be readable by a QR Code scanner (e.g. a mobile device.) "/>
+<meta name="twitter:description" content="Make a QR Code generator (with data store function) with Python Some features of this Python App: 1. Read any csv files and save each row as a small single dataset into the QR Code 2. Generate these QR Code images with data saved in 3. QR Code images should be readable by a QR Code scanner (e.g. a mobile device.) Dependencies to install (Some of them you might not happen to use): Django==2."/>
 
   </head>
 
@@ -159,6 +159,202 @@
 <h4 id="3-qr-code-images-should-be-readable-by-a-qr-code-scanner-e-g-a-mobile-device">3. QR Code images should be readable by a QR Code scanner (e.g. a mobile device.)</h4>
 
 <p><img src="https://docs.google.com/drawings/d/e/2PACX-1vS1xk5EO6Bz3qrYYp0_AUWDl26l2VEf73lx1H6VtlDxBXNC2DvF2xcwtyZx4lM7YljX9xKUz8Zq1cuw/pub?w=960&amp;h=720"></p>
+
+<h3 id="dependencies-to-install-some-of-them-you-might-not-happen-to-use">Dependencies to install (Some of them you might not happen to use):</h3>
+
+<pre><code>Django==2.2.1
+image==1.5.27
+numpy==1.16.3
+pandas==0.24.2
+Pillow==6.0.0
+PyQRCode==1.2.1
+python-dateutil==2.8.0
+pytz==2019.1
+qrcode==6.1
+six==1.12.0
+sqlparse==0.3.0
+xlrd==1.2.0
+</code></pre>
+
+<h3 id="before-you-start-make-sure-to-install-all-the-dependencies">Before you start,  make sure to install all the dependencies.</h3>
+
+<h3 id="1-make-a-simple-svg-format-qr-code-with-pyqrcode">1. Make a simple SVG format QR Code with pyqrcode</h3>
+
+<p>It&rsquo;s very straightforward to make a simple QR Code with Python module <a href="https://github.com/mnooner256/pyqrcode"><strong>pyqrcode</strong></a>.</p>
+
+<p>Let&rsquo;s first start with import the module:</p>
+
+<pre><code class="language-python">import pyqrcode
+</code></pre>
+
+<p>Let&rsquo;s store a sample text data into the QR Code and generate this QR Code.</p>
+
+<pre><code class="language-python"># Declare a variable called 'text'
+text = &quot;hey, there!&quot;
+</code></pre>
+
+<p>Now we can embed this text data into a QR Code</p>
+
+<pre><code class="language-python"># Pass the variable &quot;text&quot; into the parenthesis as the parameter:
+image = pyqrcode.create(text)
+</code></pre>
+
+<p>Let&rsquo;s now generate the QR Code image in SVG format with the sample text data saved in:</p>
+
+<pre><code class="language-python"># scale represents the size of the image so that you can tweak this parameter until
+# you have the ideal size for the image.
+
+image.svg(&quot;QR.svg&quot;, scale=&quot;5&quot;)
+</code></pre>
+
+<p>Above code will generate a QR Code named as &ldquo;QR.svg&rdquo; in your current working directory. Any QR Code scanner, e.g. a smart phone, can scan this qr code and read the info <strong>&ldquo;hey, there!&rdquo;</strong></p>
+
+<h3 id="2-read-data-from-a-csv-file-and-write-data-into-the-qr-code">2. Read data from a CSV file and write data into the QR Code</h3>
+
+<p>Let&rsquo;s first take a look at the data of sample Data.csv file (in this case, we need a flagship Python data analysis library called <a href="http://pandas.pydata.org/pandas-docs/stable/"><strong>pandas</strong></a>):</p>
+
+<pre><code class="language-python">import pandas as pd
+df = pd.read_csv(&quot;Data.csv&quot;)
+df.head() # Read only first 5 rows into the pandas DataFrame
+</code></pre>
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Brand</th>
+      <th>Name</th>
+      <th>Category</th>
+      <th>Barcode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Makeup Revolution</td>
+      <td>Makeup Revolution Camouflage Corrector Palette</td>
+      <td>Cosmetics</td>
+      <td>5029066099020</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Makeup Revolution</td>
+      <td>Makeup Revolution Pro HD Camouflage Light</td>
+      <td>Cosmetics</td>
+      <td>5029066099051</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Makeup Revolution</td>
+      <td>Makeup Revolution Pro HD Camouflage Light Medium</td>
+      <td>Cosmetics</td>
+      <td>5029066099082</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Makeup Revolution</td>
+      <td>Makeup Revolution Ultra Pro HD Camouflage Medi...</td>
+      <td>Cosmetics</td>
+      <td>5029066099112</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Makeup Revolution</td>
+      <td>Makeup Revolution Brush Flex 01 Blend and Buff</td>
+      <td>Cosmetics</td>
+      <td>5060495301087</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<p>The idea is that our Python app can read each row as a single data record from this csv file and write this data record into one QR Code generation run.</p>
+
+<p>We can iterate each row from this dataframe and save them into a new Python string. In order to do this, we can use the <a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.iterrows.html"><strong>df.iterrows()</strong></a> method from Pandas.</p>
+
+<pre><code class="language-python">
+# Call the iterrows() method from a df obejct.
+# In this case, we also do tuple unpacking.
+# because df.iterrows() render a tuple where the first indexed-element is the df row index
+# and the second-indexed element is the special Pandas series obeject (excel-wise: a column)
+
+for index, values in df.iterrows(): # Although, in this case we won't use 'index' variable
+
+        # values is a pandas series and can be indexed like a Python dictionary.
+        brand = values[&quot;Brand&quot;]
+        name = values[&quot;Name&quot;]
+        category = values[&quot;Category&quot;]
+        barcode = values[&quot;Barcode&quot;]
+
+        # Use Python f-String to embed the variables into a Python string.
+        data = f'''
+
+        Name: {name} \n
+        Barcode: {barcode} \n
+        Category: {category} \n
+        Brand: {brand} \n
+        '''
+
+        # Write this text data into the QR Code.
+        image = pyqrcode.create(data)
+
+        # Finally name the generated QR codes with the 'name' and 'barcode' variables for being
+        # unique.
+        image.svg(f&quot;{name}_{barcode}.svg&quot;, scale=&quot;5&quot;)
+
+        # Print the text data for debugging purposes.
+        print(data)
+</code></pre>
+
+<p>Let&rsquo;s make this code more modular and wrap up everything shown in section 2 and make a new function:</p>
+
+<pre><code class="language-python">import pyqrcode
+
+import pandas as pd
+
+def createQRCode():
+
+
+    df = pd.read_csv(&quot;Data.csv&quot;)
+
+    for index, values in df.iterrows():
+
+        brand = values[&quot;Brand&quot;]
+        name = values[&quot;Name&quot;]
+        category = values[&quot;Category&quot;]
+        barcode = values[&quot;Barcode&quot;]
+
+        data = f'''
+
+        Name: {name} \n
+        Barcode: {barcode} \n
+        Category: {category} \n
+        Brand: {brand}
+        '''
+        image = pyqrcode.create(data)
+        image.svg(f&quot;{name}_{barcode}.svg&quot;, scale=&quot;5&quot;)
+        print(data)
+
+</code></pre>
+
+<p>Run the function to generate the QR Codes from the CSV File.</p>
+
+<pre><code class="language-python">createQRCode()
+</code></pre>
 
       </div>
     </article>
