@@ -6,10 +6,19 @@
     <description>Recent content in Tutorials on Pythonic Frank</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>String Formatting with Python-f-String, and why you should start using it</title>
+      <link>/tutorial/python-f-string/</link>
+      <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/python-f-string/</guid>
+      <description>So, What is String Formatting? String Formatting (sometimes also referred as &amp;ldquo;String Interpolation&amp;rdquo;) is a technique for embedding or inserting variables into placeholders in a Python String object. Three ways to format a String in Python: 1. Old school %s String Formatting 2. A better string method String: str.format() 3. f&amp;rdquo;string&amp;rdquo; method - why it&amp;rsquo;s the best for String formatting in Python compared to .format() and %s name = &amp;quot;Frank&amp;quot; age = 24 profession = &amp;quot;Python Dev&amp;quot; language = &amp;quot;Python&amp;quot;  person = dict(name=&amp;quot;Frank&amp;quot; age=24 profession=&amp;quot;Python Dev&amp;quot; language=&amp;quot;Python&amp;quot;)  1.</description>
+    </item>
     
     <item>
       <title>Make a QR Code generator (with data store function) with Python</title>
