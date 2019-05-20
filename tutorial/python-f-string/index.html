@@ -49,7 +49,7 @@
 
 <meta itemprop="datePublished" content="2019-05-17T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-05-17T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="136">
+<meta itemprop="wordCount" content="400">
 
 
 
@@ -172,19 +172,78 @@ profession = &quot;Python Dev&quot;
 language = &quot;Python&quot;
 </code></pre>
 
-<pre><code class="language-python">
-person = dict(name=&quot;Frank&quot;, age=24,
-            profession=&quot;Python Dev&quot;, language=&quot;Python&quot;)
+<pre><code class="language-python">person = dict(name=&quot;Frank&quot;, age=24,
+              profession=&quot;Python Dev&quot;, language=&quot;Python&quot;)
 </code></pre>
 
-<h2 id="1-old-school-string-formatting">1. old-school % string  formatting</h2>
+<h3 id="1-s-string-formatting">1. %s string formatting</h3>
 
 <pre><code class="language-python">
-&quot;My name is %s and I'm a %s. I'm currently being %s and my favourite language is %s&quot; % (
- name, profession, age, language )
+print(&quot;My name is %s and I'm a %s. I'm currently being %s and my favourite language is %s&quot; \
+% (name, profession, age, language))
 </code></pre>
 
-<pre><code>&quot;My name is Frank and I'm a Python Dev. I'm currently being 24 and my favourite language is Python&quot;
+<pre><code>My name is Frank and I'm a Python Dev. I'm currently being 24 and my favourite language is Python
+</code></pre>
+
+<h3 id="2-str-format-string-interpolation">2. str.format() - string interpolation</h3>
+
+<pre><code class="language-python"># a.) Interpolation with empty curly braces
+
+print(&quot;My name is {} and I'm a {} and I'm {} \
+years old and My favourite lan is {}&quot;.format(name, profession, age, language))
+</code></pre>
+
+<pre><code>My name is Frank and I'm a Python Dev and I'm 24 years old and My favourite lan is Python
+</code></pre>
+
+<pre><code class="language-python"> # b.) Interpolation with tuple indexing
+print(&quot;My name is {3} and I'm a {0} and I'm {1} \
+years old and My favourite lan is {2}&quot;.format(profession, age, language, name))
+</code></pre>
+
+<pre><code>My name is Frank and I'm a Python Dev and I'm 24 years old and My favourite lan is Python
+</code></pre>
+
+<pre><code class="language-python"># c.) Interpolation with dictionary key-value mapping
+print(&quot;My name is {name} and I'm a {profession} and I'm {age} \
+years old and My favourite lan is {language}&quot;.format(**person))
+</code></pre>
+
+<pre><code>My name is Frank and I'm a Python Dev and I'm 24 years old and My favourite lan is Python
+</code></pre>
+
+<h3 id="3-python-f-string-formatting">3. Python f-string Formatting</h3>
+
+<pre><code class="language-python">print(f&quot;My name is {name} and I'm a {profession} and I'm {age} and I love {language}&quot;)
+</code></pre>
+
+<pre><code>My name is Frank and I'm a Python Dev and I'm 24 and I love Python
+</code></pre>
+
+<h3 id="any-inner-curly-braces-as-placeholders-in-a-f-string-are-python-run-time"><strong>Any inner curly braces as placeholders in a f-string are Python run-time !!!</strong></h3>
+
+<h3 id="native-python-code-can-be-executed">native Python code can be executed!!!</h3>
+
+<pre><code class="language-python"># Convert the parameter to a String
+def stringfy(value):
+
+    return str(value)
+
+
+## Run a function in a f-string placeholder
+
+print(f&quot;Hello, my age is stringfied here as {stringfy(value=24)}&quot;)
+</code></pre>
+
+<pre><code>Hello, my age is stringfied here as 24
+</code></pre>
+
+<pre><code class="language-python">## Other operations: dictionary key indexing in f-string placeholders.
+print(f&quot;My name is {person['name']} and I'm a {person['profession']}&quot;)
+</code></pre>
+
+<pre><code>My name is Frank and I'm a Python Dev
 </code></pre>
 
       </div>
