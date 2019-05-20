@@ -17,7 +17,7 @@
       <pubDate>Fri, 17 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/python-f-string/</guid>
-      <description>So, What is String Formatting? String Formatting (sometimes also referred as &amp;ldquo;String Interpolation&amp;rdquo;) is a technique for embedding or inserting variables into placeholders in a Python String object. Three ways to format a String in Python: 1. Old school %s String Formatting 2. A better string method String: str.format() 3. f&amp;rdquo;string&amp;rdquo; method - why it&amp;rsquo;s the best for String formatting in Python compared to .format() and %s name = &amp;quot;Frank&amp;quot; age = 24 profession = &amp;quot;Python Dev&amp;quot; language = &amp;quot;Python&amp;quot;  person = dict(name=&amp;quot;Frank&amp;quot;, age=24 profession=&amp;quot;Python Dev&amp;quot;, language=&amp;quot;Python&amp;quot;)  1.</description>
+      <description>So, What is String Formatting? String Formatting (sometimes also referred as &amp;ldquo;String Interpolation&amp;rdquo;) is a technique for embedding or inserting variables into placeholders in a Python String object. Three ways to format a String in Python: 1. Old school %s String Formatting 2. A better string method String: str.format() 3. f&amp;rdquo;string&amp;rdquo; method - why it&amp;rsquo;s the best for String formatting in Python compared to .format() and %s name = &amp;quot;Frank&amp;quot; age = 24 profession = &amp;quot;Python Dev&amp;quot; language = &amp;quot;Python&amp;quot;  person = dict(name=&amp;quot;Frank&amp;quot;, age=24, profession=&amp;quot;Python Dev&amp;quot;, language=&amp;quot;Python&amp;quot;)  1.</description>
     </item>
     
     <item>
@@ -137,6 +137,16 @@ This blog (and the YouTube channel associated) is all about Python. However, I&a
       <guid>/contact/</guid>
       <description>title: Contact description: We&amp;rsquo;d love to hear from you type: page menu: main: {}
 weight: 100  Your Name Email Address An email address is required.  Message   &amp;ndash;&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/services/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/services/</guid>
+      <description>Hiring and Consulting Services 1. Employment I&amp;rsquo;m currently actively seeking full-time employment for the right company if you&amp;rsquo;re interested in learning more please reach out to me. Meanwhile, you can view my cv here or learn more what I can do
+2. Python onsite or remote (via online screen-casting) training I can help your team gain the fluency of Python programming language and help them understand what Python can offer to them.</description>
     </item>
     
   </channel>
