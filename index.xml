@@ -149,5 +149,14 @@ weight: 100  Your Name Email Address An email address is required.  Message   &a
 2. Python onsite or remote (via online screen-casting) training I can help your team gain the fluency of Python programming language and help them understand what Python can offer to them.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>/support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/support/</guid>
+      <description>If you found my project (this blog and this YouTube channel) helpful, please consider supporting my work through donations.</description>
+    </item>
+    
   </channel>
 </rss>
