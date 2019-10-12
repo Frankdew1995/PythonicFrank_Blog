@@ -85,13 +85,13 @@
   </url>
   
   <url>
-    <loc>/services/</loc>
+    <loc>/now/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>/support/</loc>
+    <loc>/services/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -141,21 +141,21 @@ weight: 100  Your Name Email Address An email address is required.  Message   &a
     
     <item>
       <title></title>
+      <link>/now/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/now/</guid>
+      <description> What I&amp;rsquo;m currently up to 1. Bootstrapping swiftify 2. Brainstorming a software idea about international trading like this platform but with a more niche focus </description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>/services/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/services/</guid>
       <description>Hiring and Consulting Services 1. Employment I&amp;rsquo;m currently actively seeking full-time employment for the right company if you&amp;rsquo;re interested in learning more please reach out to me. Meanwhile, you can learn more what I can do
 2. Python onsite or remote (via online screen-casting) training I can help your team gain the fluency of Python programming language and help them understand what Python can offer to them. (This includes beginner-intermediate syntax mastery and code elegance.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/support/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/support/</guid>
-      <description>If you found my project (this blog and this YouTube channel) helpful, please consider supporting my work through donations.</description>
     </item>
     
   </channel>
