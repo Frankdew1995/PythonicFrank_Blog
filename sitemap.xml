@@ -3,116 +3,123 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/tutorial/mailgun-flask-subscribtion-python/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>/tutorial/python-f-string/</loc>
     <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tutorial/qr_code_generator_with_python/</loc>
     <lastmod>2019-05-02T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tutorial/build_a_cloud_based_weather_sms_service_using_python_twilio_and_pythonanywhere_with_open_weather_api/</loc>
     <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tutorial/nlp_and_sentiment_analysis_with_textblob_and_python/</loc>
     <lastmod>2019-03-24T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tutorial/host_static_sites_with_netlify/</loc>
     <lastmod>2019-03-17T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tutorial/batchsending_mailgun/</loc>
     <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tutorial/send_sms_with_twilio_api_using_python/</loc>
     <lastmod>2019-01-20T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tutorial/extract_tabular_data_from_pdf_with_camelot/</loc>
     <lastmod>2019-01-13T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tutorial/host_a_static_website_in_heroku/</loc>
     <lastmod>2019-01-05T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tutorial/mailgun/</loc>
     <lastmod>2019-01-03T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/aboutme/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/now/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/services/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <changefreq>monthly</changefreq>
+    <changefreq>daily</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/tutorial/</loc>
-    <lastmod>2019-05-17T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
     <priority>0</priority>
   </url>
   
