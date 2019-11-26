@@ -144,7 +144,16 @@ This blog (and the YouTube channel associated) is all about Python. However, I&a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/now/</guid>
-      <description> What I&amp;rsquo;m currently up to 1. Building swiftify 2. Building a search engine of trust-worthy merchandise vendors like this platform but with a more niche focus, a much simpler usage target. </description>
+      <description> What I&amp;rsquo;m currently up to 1. Building swiftify 2. Building a search engine of trust-worthy merchandise vendors like this platform but with a more niche focus, a much simpler usage target. (Deprecated for now and see 1.) </description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/products/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/products/</guid>
+      <description>A list of products or SaaS Startups I built for fun or profits. 1. swiftify Swiftify is a simple, versatile and centrally integrated SaaS (Software-as-a-service) based solution that lets you manage your sourcing, procurement, and logistics at efficiency and scale. Swiftify&amp;rsquo;s inhouse proprietary software for automated product sourcing, procurement management, and automated freight e-quoting and e-booking enables you to operate your business processes in a pleasant manner.</description>
     </item>
     
     <item>
